@@ -8,6 +8,7 @@ import { HttpModule } from '@angular/http'
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api'
 import { InMemoryDataService } from './contatos/in-memory-data.service';
 import { DialogService } from './dialog.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { DialogService } from './dialog.service';
         AppRountingModule,
         BrowserModule, 
         ContatosModule,
+        FormsModule,
         HttpModule,
         InMemoryWebApiModule.forRoot(InMemoryDataService)
     ],
